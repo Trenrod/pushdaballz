@@ -3,6 +3,7 @@ using System.Collections;
 
 public class GameManager : MonoBehaviour {
 
+    public ExplosionPool explosionPool;
     public EnemyPool enemyPool;
     public PusherHandler pusher;
     private Levels.Level CurrentLevel;

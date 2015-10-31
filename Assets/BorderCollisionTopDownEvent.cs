@@ -20,6 +20,7 @@ public class BorderCollisionTopDownEvent : MonoBehaviour {
         Debug.Log(other.gameObject.name);
         if (other.gameObject.tag == "Enemy")
         {
+            gameManager.explosionPool.Explosion(other.gameObject.transform.position);
             Destroy(other.gameObject);
         }
         else if (other.gameObject.tag == "Player")
